@@ -7,9 +7,8 @@ const addStudents = (id,name,grades) => {
     })
     var total_grades = 0
     if(duplicateId.length == 0){
-        students.forEach((grade)=>{
-            grade.grades.forEach((deg)=>
-             total_grades += deg)
+         grades.forEach((grade) => {
+            total_grades += grade
             console.log(total_grades)
         })
         students.push({  
